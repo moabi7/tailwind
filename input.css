@@ -10,7 +10,7 @@ body {
 }
 
 #cta {
-    background-image: url('../img/bg-simplify-desktop.svg');
+    background-image: url('../img/bg-simplify-section-desktop.svg');
     background-repeat: no-repeat;
 }
 
@@ -32,6 +32,8 @@ body {
     width: 24px;
     height: 2px;
     background: #000;
+    transform: rotate(0);
+    translate: all 0.5s;
 }
 
 .hamburger-middle {
@@ -40,6 +42,23 @@ body {
 
 .hamburger-bottom {
     transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
 
